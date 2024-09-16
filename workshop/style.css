@@ -1,0 +1,413 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+/* Body */
+body {
+    color: #E5E5E5;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://media.giphy.com/media/lo5HLcAPFSgTZNTpAn/giphy.gif');
+    background-color: rgba(13, 27, 42, 0.8);
+    border-bottom: 2px solid #1B263B;
+    backface-visibility: hidden;
+    background-blend-mode: darken;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00B4D8;
+    letter-spacing: 2px;
+}
+
+header .goal {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #86ff4f;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: #1B263B;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.left-side h2 {
+    color: #00B4D8;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.left-side ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.right-side {
+    width: 40%;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Floating Hacking Symbols Section */
+.symbols-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.symbol {
+    text-align: center;
+    color: #00B4D8;
+    position: relative;
+    display: inline-block;
+    background-color: #1B263B;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.symbol:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 20px rgba(0, 180, 216, 0.7);
+}
+
+.symbol img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Image */
+.symbol:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Text Styling */
+.symbol p {
+    font-size: 1.2rem;
+    color: #E5E5E5;
+    font-family: 'Silkscreen', sans-serif;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .symbol {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Learning Section */
+.learning-section {
+    padding: 50px;
+    background-color: rgba(0, 0, 0,0.2);
+}
+
+.learning-section h2 {
+    color: #00B4D8;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.topic {
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.topic h3 {
+    color: #00B4D8;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #E5E5E5;
+    font-family: Silkscreen;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0D1B2A;
+    color: #A1A1A1;
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .symbols-section {
+        background-color: #0D1B2A;
+    padding: 40px 0;
+    text-align: center;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Giphy Embed */
+.giphy-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.giphy-container iframe {
+    border: none;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+.giphy-container p {
+    color: #00B4D8;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Instagram Section */
+.instagram-section {
+    background-color: #0D1B2A;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.credit-item {
+    display: flex;
+    align-items: center;
+    background-color: #1B263B;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.credit-item:hover {
+    transform: translateY(-10px);
+    background-color: #255bf0a7;
+}
+
+.instagram-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.credit-item p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #E5E5E5;
+}
+
+.credit-item a {
+    color: #00B4D8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credit-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .credits {
+        flex-direction: column;
+    }
+
+    .credit-item {
+        margin-bottom: 10px;
+    }
+}
+
+.glitch {
+    font-size: 36px; 
+    color: #2ecded;
+    animation: glitch 164ms infinite;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
+    }
+
+    15% {
+        text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    49% {
+        text-shadow: -0.05em -.025em 0 rgba(255, 0, 0, .75), 0.025em 0.025em 0 rgba(0, 255, 0, .75), -0.05em -.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, .75), 0.05em 0 0 rgba(0, 255, 0, .75), 0 -0.05em 0 rgba(0, 0, 255, .75);
+    }
+
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, .75), -0.025em -0.025em 0 rgba(0, 255, 0, .75), -0.025em -0.05em 0 rgba(0, 0, 255, .75);
+    }
+}
+
+.containerGlitch {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1175px;
+    height: auto;
+}
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+/* Section with background image */
+.opaque-background-section {
+    position: relative; /* Allows positioning of the ::before pseudo-element */
+    overflow: hidden; /* Ensures no overflow of background image */
+    padding: 40px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+}
+
+/* Pseudo-element for background image */
+.opaque-background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('1.jpeg'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Set the opacity for the background image */
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Content styling */
+.content {
+    position: relative; /* Ensures content is above the background */
+    color: #E5E5E5; /* Text color */
+}
+
+/* Text and paragraph styling */
+.content h1, .content p {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Silkscreen', sans-serif; /* Font family */
+}
+
+/* Specific text opacity */
+.content p {
+    opacity: 1; /* Full opacity for text */
+}
