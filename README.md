@@ -1,7 +1,7 @@
 # Cybersecurity & Ethical Hacking Workshop Website
 
 ## Overview
-This website was designed to promote and provide details about an upcoming **Cybersecurity & Ethical Hacking Workshop**. The site includes sections that explain the goals, outcomes, and objectives of the workshop, along with information on key cybersecurity topics.
+This website was designed to promote and provide details about a **Cybersecurity & Ethical Hacking Workshop**. The site includes sections that explain the goals, outcomes, and objectives of the workshop, along with information on key cybersecurity topics.
 
 ## Features
 - **Modern and responsive design** with a dark blue and black color scheme.
@@ -33,3 +33,19 @@ To run this project locally:
 1. Clone this repository.
    ```bash
    git clone https://github.com/Siddhubn/CyberSec-Ethical-Hacking/
+
+## Disclaimer
+This project is intended solely for educational purposes to demonstrate ethical hacking techniques. It should not be used for any malicious activities. Always follow legal and ethical guidelines when testing systems.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Author :
+Siddharth B N
+LinkedIN: https://www.linkedin.com/in/siddharth-b-n/
+Github: https://github.com/Siddhubn/
+
+## Contributing :
+Contributions, issues, and feature requests are welcome! Feel free to check out the issues page.
+
+Happy Ethical Hacking!
